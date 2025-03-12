@@ -1,0 +1,61 @@
+{
+    "editor.fontSize": 14,
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stm32f10x_tim.h": "c",
+        "delay.h": "c",
+        "timer.h": "c",
+        "stm32f10x.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "key.h": "c",
+        "oled.h": "c",
+        "led.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "stdint.h": "c",
+        "misc.h": "c",
+        "rp.h": "c",
+        "stm32f10x_conf.h": "c",
+        "stm32f10x_adc.h": "c",
+        "stm32f10x_rcc.h": "c",
+        "math.h": "c",
+        "stm32f4xx.h": "c",
+        "stm32f4xx_rcc.h": "c",
+        "stm32f4xx_crc.h": "c",
+        "stm32f4xx_cryp.h": "c",
+        "stm32f4xx_dbgmcu.h": "c",
+        "stm32f4xx_cec.h": "c",
+        "stm32f4xx_dac.h": "c",
+        "stm32f4xx_dcmi.h": "c",
+        "stm32f4xx_dma.h": "c",
+        "stm32f4xx_fmc.h": "c",
+        "stm32f4xx_conf.h": "c",
+        "stm32f4xx_gpio.h": "c",
+        "stm32f4xx_syscfg.h": "c",
+        "stm32f4xx_pwr.h": "c",
+        "stm32f4xx_it.h": "c",
+        "errno.h": "c",
+        "stat.h": "c"
+    },
+
+    
+    "VsCodeTaskButtons.showCounter": true,
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "$(notebook-move-down) Build",
+            "task": "build",
+            "tooltip": "🛠️ Start the \"build\" task"
+        },
+        {
+            "label": "$(notebook-delete-cell) Clean build",
+            "task": "clean",
+            "tooltip": "🧹 Start a \"clean\" task"
+        },
+        {
+            "label": "$(notebook-move-down) Download",
+            "task": "download",
+            "tooltip": "Download Hex in stm32f103c8t6 the \"download\" task"
+        }
+    ]
+    
+}
