@@ -35,7 +35,11 @@
         "stm32f4xx_pwr.h": "c",
         "stm32f4xx_it.h": "c",
         "errno.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "stm32f4xx_dsi.h": "c",
+        "stm32f4xx_spi.h": "c",
+        "core_cm4.h": "c",
+        "system_stm32f4xx.h": "c"
     },
 
     
@@ -56,6 +60,7 @@
             "task": "download",
             "tooltip": "Download Hex in stm32f103c8t6 the \"download\" task"
         }
-    ]
+    ],
+    "cortex-debug.variableUseNaturalFormat": false
     
 }

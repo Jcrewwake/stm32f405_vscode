@@ -6,13 +6,13 @@ SIZE = arm-none-eabi-size
 
 # 目标配置
 TARGET = LED_LIGHT
-MCU = -mcpu=cortex-m3 -mthumb
+MCU = -mcpu=cortex-m4 -mthumb
 CFLAGS = $(MCU) -Os -g3 -Wall -fdata-sections -ffunction-sections
-CFLAGS += -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD
+CFLAGS += -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx
 CFLAGS += -IUser/ -ILibrary/ -IStart/ -ISystem/ -IHardware/ -IStart/
 
 # 链接脚本
-LDSCRIPT = stm32f103c8_flash.ld
+LDSCRIPT = stm32f405rgt6_flash.ld
 LDFLAGS = $(MCU) -T$(LDSCRIPT) -Wl,--gc-sections -specs=nano.specs -specs=nosys.specs
 LDFLAGS += -L"C:/Program\ Files/arm-gnu-toolchain-14.2.rel1/arm-none-eabi/lib"
 LDFLAGS += -Wl,--start-group -lc -lm -Wl,--end-group -Wl,-u,_printf_float
