@@ -5,15 +5,19 @@
 
 int main(void)
 {
+    uint16_t i = 0;
     OLED_Init();
     LED_Init();
-    OLED_Printf(0, 0, OLED_6X8, "Hello World!: %lf", 0.918273);
+    OLED_Printf(0, 0, OLED_6X8, "Hello World!");
     OLED_Update();
     while(1) {
         LED_Turn();
-        Delay_s(4);
-        LED_Turn();
-        Delay_s(1);
+        // Delay_ms(500);
+        // LED_Turn();
+        // Delay_ms(500);
+        i++;
+        OLED_Printf(0, 16, OLED_6X8, "i:%d", i);
+        OLED_Update();
     }
     return 0;
 }

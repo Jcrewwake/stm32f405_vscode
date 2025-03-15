@@ -34,6 +34,7 @@ add_compile_options(
     -ffunction-sections
     -DUSE_STDPERIPH_DRIVER
     -DSTM32F40_41xxx
+    -DOLED_USE_SPI     # 使用 SPI 驱动 OLED  引脚接线 VCC:VCC GND:GND D0:PB3 D1:PB4 RES:PB7 DC:PB6 CS:PB5
 )
 
 # 包含目录
